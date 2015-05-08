@@ -33,9 +33,9 @@ def ehPrimo(soma):
             divide+=1
 
     if (divide > 2):
-        resultado = "Não é uma palavra prima"
+        resultado = "\n Esta não é uma palavra prima"
     else:
-        resultado = "É uma palavra prima"
+        resultado = "\n Esta é uma palavra prima"
 
     return resultado
 
@@ -49,7 +49,7 @@ def main():
 
     nomeDoArquivo = "conjuntoDePalavras.txt"
     arquivo = open(nomeDoArquivo,'r')
-    print("Descobrindo se a palavra é prima ou não \n")
+    print("Palavras Primas \n")
 
     palavras = arquivo.readlines()
       
@@ -58,7 +58,7 @@ def main():
         
         soma = converterParaNumero(palavra)
         resultado = ehPrimo(soma)
-        print (palavra +" "+ resultado + "\n")
+        print (palavra + resultado + "\n")
 
     arquivo.close()
 
