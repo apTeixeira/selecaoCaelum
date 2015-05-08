@@ -59,6 +59,7 @@ def main():
         soma = converterParaNumero(palavra)
         resultado = ehPrimo(soma)
         print (palavra + resultado + "\n")
+        print("----------------------------------- \n")
 
     arquivo.close()
 
