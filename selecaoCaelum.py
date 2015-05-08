@@ -10,7 +10,7 @@ auxiliar = {"a" : 1, "b" : 2, "c" : 3, "d" : 4, "e" : 5,
              "T" : 46, "U" : 47, "V" : 48, "W" : 49, "X" : 50,
              "Y" : 51, "Z" : 52, "\n" : 0}
 
-def converterParaNumero(palavra):
+def descobreSoma(palavra):
 
     soma = 0
 
@@ -56,7 +56,7 @@ def main():
    
     for palavra in palavras:
         
-        soma = converterParaNumero(palavra)
+        soma = descobreSoma(palavra)
         resultado = ehPrimo(soma)
         print (palavra + resultado + "\n")
         print("----------------------------------- \n")
