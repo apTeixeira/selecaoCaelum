@@ -28,7 +28,7 @@ def ehPrimo(soma):
 
     divide = 0
 
-    for cont in range(1,soma):
+    for cont in range(1,soma+1):
         if(soma%cont) == 0:
             divide+=1
 
